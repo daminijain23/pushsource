@@ -63,6 +63,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install RPM
         run: sudo apt-get install -y rpm
+      - name: Upgrade pip
+        run: pip install --upgrade pip
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
